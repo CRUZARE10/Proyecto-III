@@ -1,0 +1,112 @@
+/* Estilo para el fondo negro y centrar el contenido */
+body {
+    background-color: black; /* Fondo negro para la página */
+    color: white; /* Texto en blanco para mejor visibilidad */
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+/* Estilo del contenedor del formulario */
+.form-container {
+    background-color: #333; /* Fondo del formulario */
+    padding: 20px; /* Espacio interior del formulario */
+    border-radius: 10px; /* Bordes redondeados del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para el formulario */
+}
+
+/* Estilo de los elementos del formulario */
+form {
+    display: flex; /* Flexbox para la alineación */
+    flex-direction: column; /* Dirección vertical de los elementos */
+}
+
+label {
+    margin-bottom: 5px; /* Espacio inferior para cada etiqueta */
+}
+
+/* Estilo de los campos de entrada de datos */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="radio"] {
+    margin-bottom: 10px; /* Espacio inferior entre los elementos */
+    padding: 5px; /* Espacio interior de los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados de los campos de entrada */
+    border: 1px solid #555; /* Borde gris de los campos de entrada */
+    background-color: #222; /* Fondo oscuro para los campos de entrada */
+    color: white; /* Texto blanco dentro de los campos de entrada */
+}
+
+/* Estilo del botón de enviar */
+button {
+    padding: 10px; /* Espacio interior del botón */
+    border: none; /* Sin borde para el botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    background-color: #555; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#create-user-form {
+    display: none;
+}

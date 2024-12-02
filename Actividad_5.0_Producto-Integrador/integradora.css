@@ -1,0 +1,276 @@
+/* Globales */
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: #323232;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Helvetica', sans-serif;
+    color: #287c07;
+}
+
+img {
+    max-width: 100%;
+}
+
+.icon-cart {
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-cart:hover {
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px 40px 10px;
+    background-color: #323232; /* Asegura fondo coherente */
+}
+/* Estilo del menú de navegación */
+nav a {
+    display: inline-block;
+    padding: 15px 30px; /* Tamaño del botón */
+    margin: 5px; /* Espacio entre los botones */
+    font-size: 18px; /* Tamaño del texto en el botón */
+    color: #fff; /* Color del texto */
+    background-color: rgba(75, 83, 32, 0.6); /* Fondo verde militar con transparencia */
+    text-decoration: none; /* Eliminar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Estilo para el efecto hover */
+nav a:hover {
+    background-color: rgba(107, 142, 35, 0.8); /* Un verde más claro y menos transparente para hover */
+}
+
+/* Icono del carrito y productos */
+.contenedor-icon {
+    position: relative;
+}
+
+.count-products {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: #000;
+    color: #287c07;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos {
+    font-size: 12px;
+}
+
+.contenedor-cart-products {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #000;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(235, 239, 29, 0.2);
+    border-radius: 10px;
+}
+
+.cart-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(210, 243, 44, 0.2);
+}
+
+.info-cart-product {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito {
+    font-size: 20px;
+}
+
+.precio-producto-carrito {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito {
+    font-weight: 400;
+    font-size: 20px; /* Corregido '20pz' a '20px' */
+}
+
+.icon-close {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover {
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart {
+    display: none;
+}
+
+/* Main */
+.contenedor-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.items {
+    border-radius: 10px;
+    overflow: hidden; /* Para que no se desborde la imagen si no tiene el tamaño correcto */
+}
+
+.items:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.items img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Muestra la imagen completa sin zoom ni recorte */
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.items figure {
+    overflow: hidden;
+    width: 100%; /* Asegura que el contenedor tenga el tamaño adecuado */
+    height: 200px; /* Tamaño fijo de la imagen */
+}
+
+.info-product {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+
+.price {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button {
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #ebe6e6;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #323232;
+    transition: background-color 0.5s ease;
+}
+
+.social-link a:hover {
+    background-color: #287c07;
+}
+
+/* Estilo para la imagen de fondo en páginas específicas */
+.background-image {
+    background-image: url('imagenes/portada.jpg'); /* Ruta a la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen al fondo cuando se desplaza */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la página */
+}
+
+/* Estilo para la imagen de fondo en páginas específicas */
+.background-image {
+    background-image: url('imagenes/portada.jpg'); /* Ruta a la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen al fondo cuando se desplaza */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la página */
+    opacity: 0.5; /* Ajusta la opacidad de la imagen de fondo (0 es completamente transparente, 1 es completamente opaco) */
+    position: relative; /* Necesario para el posicionamiento absoluto de la imagen centrada */
+}
+
+/* Nueva regla para la imagen adicional */
+.mision-image {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 90%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 80vh; /* Ajusta la altura máxima de la imagen */
+    position: absolute; /* Permite posicionar la imagen centrada sobre el fondo */
+    top: 50%; /* Centro vertical */
+    left: 50%; /* Centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar la imagen */
+    z-index: 1; /* Asegura que la imagen se muestre por encima del fondo */
+}
+/* Estilo del footer */
+.info-footer {
+    position: fixed; /* Fija el recuadro en una posición específica */
+    bottom: 20px; /* Espacio desde el borde inferior */
+    left: 40px; /* Espacio desde el borde izquierdo */
+    background-color: #000; /* Color de fondo negro */
+    color:  #287c07; /* Color del texto blanco */
+    padding: 40px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 750px; /* Ancho del recuadro */
+    z-index: 10; /* Asegura que el recuadro esté por encima de otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+.info-footer p {
+    margin: 0;
+    font-size:22px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negritas */
+    line-height: 1.5; /* Espaciado entre líneas */
+}

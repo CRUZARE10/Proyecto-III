@@ -1,0 +1,179 @@
+/* Estilos para la sección de contacto */
+.contact-section {
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#contact-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contact-form button {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #218838;
+}
+
+.contact-btn {
+    margin-top: 20px;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+.whatsapp-icon {
+    width: 25px;
+    height: 25px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.chat, .faq, .social-media {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat {
+    background-color: #f9f9f9;
+}
+
+.faq {
+    background-color: #eef;
+}
+
+.social-media {
+    background-color: #f7f7ff;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.social-media a:hover {
+    color: #005fa3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+/* Estilos para la sección de Políticas de Calidad */
+.quality-policies-section {
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.quality-policies-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.scroll-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.scroll-box p {
+    margin-bottom: 15px;
+}
+/* Estilo del menú de navegación */
+nav a {
+    display: inline-block;
+    padding: 15px 30px; /* Tamaño del botón */
+    margin: 5px; /* Espacio entre los botones */
+    font-size: 18px; /* Tamaño del texto en el botón */
+    color: #fff; /* Color del texto */
+    background-color: rgba(75, 83, 32, 0.6); /* Fondo verde militar con transparencia */
+    text-decoration: none; /* Eliminar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
